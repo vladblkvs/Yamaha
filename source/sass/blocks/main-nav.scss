@@ -14,6 +14,44 @@
 }
 
 .main-nav__link {
+  position: relative;
+  display: block;
+  padding: 38px 34px 37px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  font-style: normal;
+  text-transform: uppercase;
   text-decoration: none;
+  // transform: scaleX(1.04);
   color: #212327;
+  outline: none;
+
+  .main-nav__list--secondary & {
+    font-size: 12px;
+    padding: 38px 16px 37px;
+  }
+}
+
+.main-nav__item--active .main-nav__link::after,
+.main-nav__item:not(.main-nav__item--active) .main-nav__link:hover::after,
+.main-nav__item:not(.main-nav__item--active) .main-nav__link:focus::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #ee3b33;
+}
+
+.main-nav__item:not(.main-nav__item--active) .main-nav__link:hover,
+.main-nav__item:not(.main-nav__item--active) .main-nav__link:focus {
+  color: #ee3b33;
+}
+
+.main-nav__item:not(.main-nav__item--active) .main-nav__link:active {
+  opacity: 0.7;
 }
