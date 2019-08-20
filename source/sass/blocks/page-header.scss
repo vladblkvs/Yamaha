@@ -5,6 +5,7 @@
 
 .page-header__container {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .page-header__logo {
@@ -30,6 +31,7 @@
 
 .page-header__search-btn-inner {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   width: 38px;
