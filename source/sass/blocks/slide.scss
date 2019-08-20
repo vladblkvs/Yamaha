@@ -1,0 +1,131 @@
+.slide {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 125px 0 75px 0;
+}
+
+.slide__description {
+  max-width: 460px;
+  margin-left: 80px;
+}
+
+.slide__title {
+  margin: 0;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 75px;
+  line-height: 75px;
+  font-weight: 500;
+}
+
+.slide__version {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.slide__versions-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-left: 30px;
+  padding: 0;
+  list-style: none;
+}
+
+.slide__version-item {
+  position: relative;
+}
+
+.slide__version-btn {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #81848a;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.slide__version-btn:hover,
+.slide__version-btn:focus,
+.slide__version-item--active .slide__version-btn {
+  color: #ee3b33;
+}
+
+.slide__version-item:not(.slide__version-item--active) .slide__version-btn:active {
+  opacity: 0.7;
+}
+
+.slide__version-item:not(:first-child) {
+  margin-left: 20px;
+}
+
+.slide__version-item:not(:first-child)::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -10px;
+  display: block;
+  width: 2px;
+  height: 17px;
+  background-color: #e5e7ed;
+}
+
+.slide__prise {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-bottom: 32px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 13px;
+  text-transform: uppercase;
+  color: #81848a;
+}
+
+.slide__prise-value {
+  margin-top: 5px;
+  font-size: 25px;
+  line-height: 25px;
+  color: #212327;
+}
+
+.slide__color-list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.slide__color-item:not(:first-child) {
+  margin-left: 22px;
+}
+
+.slide__color-btn {
+  padding: 0;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  & svg {
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 0 0 1px #cacbce;
+  }
+}
+
+.slide__color-btn:hover svg,
+.slide__color-btn:focus svg,
+.slide__color-item--active svg {
+  box-shadow: 0 0 0 1px #ee4039;
+}
+
+.slide__color-btn:active svg {
+  opacity: 0.7;
+}
+
+.slide__btn-block {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}

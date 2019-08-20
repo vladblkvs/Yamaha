@@ -41,6 +41,10 @@
   color: #ee3b33;
 }
 
+.products__item:not(.products__item--active) .products__btn:active {
+  opacity: 0.7;
+}
+
 .products__item--active .products__btn::after,
 .products__item:not(.products__item--active) .products__btn:hover::after,
 .products__item:not(.products__item--active) .products__btn:focus::after {
