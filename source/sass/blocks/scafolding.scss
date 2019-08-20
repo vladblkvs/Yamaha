@@ -37,6 +37,11 @@ body {
   box-sizing: inherit;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -50,7 +55,6 @@ body {
   overflow: hidden;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
+.hidden {
+  display: none;
 }

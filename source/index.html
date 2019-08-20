@@ -2,11 +2,20 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <title>Yamaha</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preload" href="../fonts/Oswald.woff2" as="font">
   <link rel="preload" href="../fonts/SourceSansPro.woff2" as="font">
   <link rel="stylesheet" href="css/style.css">
-  <title>Yamaha</title>
+  <link rel="manifest" href="manifest/site.webmanifest">
+  <link rel="icon" type="image/x-icon" href="img/favicon/favicon.ico">
+  <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.png">
+  <meta name="msapplication-TileImage" content="/ms-icon-150x150.png">
 </head>
 <body>
   <div style="display: none;">
@@ -22,15 +31,15 @@
       </span>
       <nav class="page-header__nav main-nav">
         <ul class="main-nav__list main-nav__list--main">
-          <li class="main-nav__item main-nav__item--active"><a class="main-nav__link">Supersport</a></li>
-          <li class="main-nav__item"><a href="#" class="main-nav__link">Supersport touring</a></li>
-          <li class="main-nav__item"><a href="#" class="main-nav__link">Sport</a></li>
-          <li class="main-nav__item"><a href="#" class="main-nav__link">Dual sport</a></li>
+          <li class="main-nav__item main-nav__item--active"><a class="main-nav__link" href="#">Supersport</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#">Supersport touring</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#">Sport</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#">Dual sport</a></li>
         </ul>
         <ul class="main-nav__list main-nav__list--secondary">
-          <li class="main-nav__item"><a href="#" class="main-nav__link">Find a dialer</a></li>
-          <li class="main-nav__item"><a href="#" class="main-nav__link">My Yamaha Login/SignUp</a></li>
-          <li class="main-nav__item"><a href="#" class="main-nav__link">Events & Demos</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#">Find a dialer</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#">My Yamaha Login/SignUp</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#">Events & Demos</a></li>
         </ul>
       </nav>
       <button class="page-header__search-btn" action="#" method="GET">
@@ -45,28 +54,54 @@
   </header>
   <main class="page-main">
     <h1 class="visually-hidden">Yamaha internet-shop</h1>
-    <div class="container">
       <section class="page-main__presentation">
         <h2 class="visually-hidden">Presentation</h2>
         <div class="page-main__slider products">
-          <ul class="products__list">
-            <li class="products__item">
-              <a class="products__btn" type="button"><img src="https://via.placeholder.com/162x92" alt="2016 YZF-R1M"></a>
-            </li>
-            <li class="products__item products__item--active">
-              <a class="products__btn" type="button"><img src="https://via.placeholder.com/162x92" alt="2016 YZF-R1"></a>
-            </li>
-            <li class="products__item">
-              <a class="products__btn" type="button"><img src="https://via.placeholder.com/162x92" alt="2016 YZF-R1S"></a>
-            </li>
-            <li class="products__item">
-              <a class="products__btn" type="button"><img src="https://via.placeholder.com/162x92" alt="2016 YZF-R6"></a>
-            </li>
-            <li class="products__item">
-              <a class="products__btn" type="button"><img src="https://via.placeholder.com/162x92" alt="2016 YZF-R3"></a>
-            </li>
-          </ul>
-          <ul class="products__slides">
+          <div class="products__list-wrapper">
+            <ul class="products__list container">
+              <li class="products__item">
+                <a class="products__btn" href="#">
+                  <span class="products__preview">
+                    <img src="img/product-preview-1.jpg" alt="2016 YZF-R1M">
+                  </span>
+                  2016 YZF-R1M
+                </a>
+              </li>
+              <li class="products__item products__item--active">
+                <a class="products__btn" href="#">
+                  <span class="products__preview">
+                    <img src="img/product-preview-2.jpg" alt="2016 YZF-R1">
+                  </span>
+                  2016 YZF-R1
+                </a>
+              </li>
+              <li class="products__item">
+                <a class="products__btn" href="#">
+                  <span class="products__preview">
+                    <img src="img/product-preview-3.jpg" alt="2016 YZF-R1S">
+                  </span>
+                  2016 YZF-R1S
+                </a>
+              </li>
+              <li class="products__item">
+                <a class="products__btn" href="#">
+                  <span class="products__preview">
+                    <img src="img/product-preview-4.jpg" alt="2016 YZF-R6">
+                  </span>
+                  2016 YZF-R1M
+                </a>
+              </li>
+              <li class="products__item">
+                <a class="products__btn" href="#">
+                  <span class="products__preview">
+                    <img src="img/product-preview-5.jpg" alt="2016 YZF-R3">
+                  </span>
+                  2016 YZF-R3
+                </a>
+              </li>
+            </ul>
+          </div>
+          <ul class="products__slides container">
             <li class="products__slide slide">
               <div class="slide__image">
                 <img src="https://via.placeholder.com/760x505" alt="2016 YZF-R1">
@@ -117,7 +152,7 @@
             </li>
           </ul>
         </div>
-        <div class="page-main__slider specs">
+        <div class="page-main__slider specs container">
           <ul class="specs__list">
             <li class="specs__item specs__item--active">
               <a href="#" class="specs__btn">
@@ -163,7 +198,7 @@
           <ul class="specs__slides">
             <li class="specs__slides specs-slide">
               <div class="specs-slide__image-block">
-                <img class="specs-slide__image" src="img/motor.png" width="291" height="313">
+                <img class="specs-slide__image" src="img/motor.jpg" width="291" height="313">
               </div>
               <div class="specs-slide__description">
                 <h3 class="specs-slide__title">Cutting-edge Crossplane Engine</h3>
@@ -185,10 +220,89 @@
           </ul>
         </div>
       </section>
+    <div class="container">
       <section class="overview">
         <h2 class="visually-hidden">Overview</h2>
       </section>
     </div>
   </main>
+  <footer class="page-footer">
+    <div class="page-footer__nav">
+      <div class="container">
+        <div class="page-footer__flex-block">
+          <ul class="page-footer__list">
+            <li class="page-footer__item"><a href="#" class="page-footer__link">Find a Dealer</a></li>
+            <li class="page-footer__item"><a href="#" class="page-footer__link">Current Offers</a></li>
+            <li class="page-footer__item"><a href="#" class="page-footer__link">Events & Demos</a></li>
+            <li class="page-footer__item"><a href="#" class="page-footer__link">News</a></li>
+            <li class="page-footer__item"><a href="#" class="page-footer__link">Racing</a></li>
+          </ul>
+          <ul class="page-footer__list">
+            <li class="page-footer__item"><a href="#" class="page-footer__link">Rider Training</a></li>
+            <li class="page-footer__item"><a href="#" class="page-footer__link">Purchase Tools</a></li>
+            <li class="page-footer__item"><a href="#" class="page-footer__link">Try A Yamaha</a></li>
+            <li class="page-footer__item"><a href="#" class="page-footer__link">View Owner's Manuals</a></li>
+            <li class="page-footer__item"><a href="#" class="page-footer__link">Buy Manuals Online</a></li>
+          </ul>
+          <ul class="page-footer__list">
+            <li class="page-footer__item"><a href="#" class="page-footer__link">Accessories</a></li>
+            <li class="page-footer__item"><a href="#" class="page-footer__link">Apparel</a></li>
+            <li class="page-footer__item"><a href="#" class="page-footer__link">Parts & Service</a></li>
+            <li class="page-footer__item"><a href="#" class="page-footer__link">View Parts Catalog</a></li>
+            <li class="page-footer__item"><a href="#" class="page-footer__link">Shop & Maintenance</a></li>
+          </ul>
+          <ul class="page-footer__list">
+            <li class="page-footer__item"><a href="#" class="page-footer__link">Yamaha Motor USA Home</a></li>
+            <li class="page-footer__item"><a href="#" class="page-footer__link">Contact Us</a></li>
+            <li class="page-footer__item"><a href="#" class="page-footer__link">Privacy Policy</a></li>
+            <li class="page-footer__item"><a href="#" class="page-footer__link">Terms & Conditions</a></li>
+            <li class="page-footer__item"><a href="#" class="page-footer__link">Recalls</a></li>
+          </ul>
+          <a href="#" class="page-footer__logo">
+            <svg class="page-footer__logo-svg" width="214" height="47">
+              <title>«Yamaha Street»</title>
+              <use xlink:href="#logo-footer"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="page-footer__contact">
+      <div class="container">
+        <div class="page-footer__flex-block page-footer__flex-block--footer-down">
+          <p class="page-footer__text">
+            ©2016 Yamaha Motor Corporation, USA. All rights reserved.
+          </p>
+          <ul class="page-footer__list page-footer__list--footer-down">
+            <li class="page-footer__item">
+              <a href="" class="page-footer__link page-footer__link--footer-down">
+                  Customer Service
+              </a>
+            </li>
+            <li class="page-footer__item">
+              <a href="" class="page-footer__link page-footer__link--footer-down">
+                Contact Us
+              </a>
+            </li>
+            <li class="page-footer__item">
+              <a href="" class="page-footer__link page-footer__link--footer-down">
+                Privacy Policy
+              </a>
+            </li>
+            <li class="page-footer__item">
+              <a href="" class="page-footer__link page-footer__link--footer-down">
+                Terms & Conditions
+              </a>
+            </li>
+            <li class="page-footer__item">
+              <a href="" class="page-footer__link page-footer__link--footer-down">
+                Dealer Login
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
