@@ -1,5 +1,5 @@
 .specs {
-  padding: 0 245px;
+  margin: 0 auto;
 }
 
 .specs__list {
@@ -8,7 +8,8 @@
   justify-content: space-between;
 
   list-style: none;
-  margin: 0;
+  max-width: 1000px;
+  margin: 0 auto;
   margin-bottom: 74px;
   padding: 0;
 
@@ -78,10 +79,8 @@
 }
 
 .specs__item--active .specs__title {
-  font-family: "Oswald", "Arial", sans-serif;
   color: #212327;
 }
-
 
 .specs__btn {
   position: relative;
@@ -114,7 +113,7 @@
   }
 }
 
-.specs__slides {
+.specs__slides-list {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -129,6 +128,7 @@
 
 .specs__title {
   margin-top: auto;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 13px;
   font-weight: 500;
   color: #c8c8c8;
