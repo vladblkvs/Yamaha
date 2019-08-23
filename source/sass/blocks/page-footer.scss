@@ -1,12 +1,13 @@
 .page-footer__flex-block {
-  padding-left: 175px;
-  padding-right: 259px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 
+  padding: 0 255px 0 170px;
+
   &--footer-down {
-    padding-right: 175px;
+    margin: 0 auto;
   }
 }
 
@@ -17,11 +18,6 @@
   font-weight: 400;
   line-height: 2.25;
   background-color: #212327;
-}
-
-.page-footer__contact {
-  padding: 15px 0;
-  background-color: #191a1e;
 }
 
 .page-footer__list {
@@ -45,6 +41,7 @@
 }
 
 .page-footer__contact {
+  padding: 15px 0;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 10px;
   font-weight: 400;
@@ -52,6 +49,7 @@
   text-decoration: none;
   text-transform: uppercase;
   color: #787e89;
+  background-color: #191a1e;
 }
 
 .page-footer__text {
