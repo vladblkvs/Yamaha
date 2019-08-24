@@ -4,7 +4,7 @@
   justify-content: space-between;
   align-items: center;
 
-  padding: 0 255px 0 170px;
+  padding: 0 90px 0 70px;
 
   &--footer-down {
     margin: 0 auto;
@@ -27,6 +27,7 @@
 
   &--footer-down {
     display: flex;
+    flex-wrap: wrap;
   }
 }
 
@@ -58,4 +59,10 @@
 
 .page-footer__logo-svg {
   fill: #393d43;
+}
+
+@media (min-width:1070px) {
+  .page-footer__flex-block {
+    padding: 0 255px 0 170px;
+  }
 }
