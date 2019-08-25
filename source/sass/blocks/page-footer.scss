@@ -22,7 +22,7 @@
 
 .page-footer__list {
   list-style: none;
-  margin: 0;
+  margin-right: 20px;
   padding: 0;
 
   &--footer-down {
@@ -57,11 +57,22 @@
   margin: 0;
 }
 
+.page-footer__logo {
+  margin-top: 20px;
+}
+
 .page-footer__logo-svg {
   fill: #393d43;
 }
 
-@media (min-width:1070px) {
+@media (min-width:$tablet-width) {
+  .page-footer__flex-block {
+
+  }
+}
+
+
+@media (min-width:$deskop-width) {
   .page-footer__flex-block {
     padding: 0 255px 0 170px;
   }
