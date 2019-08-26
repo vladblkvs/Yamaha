@@ -4,11 +4,12 @@
   justify-content: space-between;
   align-items: center;
 
-  padding: 0 255px 0 170px;
+  padding: 0 90px 0 70px;
 
   &--footer-down {
     margin: 0 auto;
   }
+
 }
 
 .page-footer__nav {
@@ -22,11 +23,12 @@
 
 .page-footer__list {
   list-style: none;
-  margin: 0;
+  margin-right: 20px;
   padding: 0;
 
   &--footer-down {
     display: flex;
+    flex-wrap: wrap;
   }
 }
 
@@ -36,7 +38,7 @@
   color: #787e89;
 
   &--footer-down {
-    padding: 0 12px;
+    padding-right: 24px;
   }
 }
 
@@ -56,6 +58,16 @@
   margin: 0;
 }
 
+.page-footer__logo {
+  margin-top: 20px;
+}
+
 .page-footer__logo-svg {
   fill: #393d43;
+}
+
+@media (min-width:$deskop-width) {
+  .page-footer__flex-block {
+    padding: 0 255px 0 170px;
+  }
 }

@@ -7,12 +7,15 @@
 }
 
 .addition__picture {
-  width: 840px;
+  display: flex;
+  justify-content: center;
   margin: 0 auto;
   padding: 40px 0;
 
   & img {
     display: block;
+    width: auto;
+    height: auto;
   }
 }
 
@@ -31,15 +34,16 @@
 .addition__products-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  width: 710px;
-  margin: 0 auto;
+  justify-content: center;
+  /*width: 710px;*/
+  margin: 0;
   padding: 80px 0;
   list-style: none;
 }
 
 .addition__products-item {
   display: flex;
+  margin: 0 50px;
 }
 
 .addition__products-link {
