@@ -81,3 +81,13 @@
   font-size: 14px;
   line-height: 21px;
 }
+
+@media (max-width: $tablet-width) {
+  .addition__list {
+    justify-content: center;
+  }
+
+  .addition__item {
+    padding: 10px 30px;
+  }
+}

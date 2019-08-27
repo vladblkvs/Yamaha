@@ -9,7 +9,6 @@
   &--footer-down {
     margin: 0 auto;
   }
-
 }
 
 .page-footer__nav {
@@ -66,8 +65,8 @@
   fill: #393d43;
 }
 
-@media (min-width:$deskop-width) {
+@media (max-width: $tablet-width) {
   .page-footer__flex-block {
-    padding: 0 255px 0 170px;
+    padding: 0 30px;
   }
 }
