@@ -7,7 +7,7 @@
 
 .slide__description {
   max-width: 460px;
-  margin: 0 auto;
+  margin-left: 80px;
 }
 
 .slide__title {
@@ -130,8 +130,13 @@
   margin-top: 30px;
 }
 
-@media (min-width:$tablet-width) {
+@media (max-width: $tablet-width) {
   .slide__description {
-    margin-left: 80px;
+    margin: 0 auto;
+  }
+
+  .slide__btn-block {
+    justify-content: center;
+    margin: 30px auto 0;
   }
 }
