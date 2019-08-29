@@ -1,8 +1,23 @@
 .specs-slide {
-  display: flex;
+  display: none;
   flex-wrap: wrap;
   justify-content: center;
   padding: 0 35px;
+
+  &--active {
+    display: flex;
+    animation: visable 0.5s;
+  }
+}
+
+@keyframes visable {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 .specs-slide__title {
