@@ -21,3 +21,13 @@
   color: #ee3b33;
   background-color: #ffffff;
 }
+
+.button:hover,
+.button:focus {
+  box-shadow: 0 0 0 2px #ffffff, 0 0 0 4px #ee3b33;
+  outline: none;
+}
+
+.button:active {
+  opacity: 0.7;
+}
