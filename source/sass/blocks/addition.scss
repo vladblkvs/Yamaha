@@ -82,7 +82,13 @@
   line-height: 21px;
 }
 
-@media (max-width: $tablet-width) {
+@media (max-width: $max-tablet-width) {
+  .addition__products-item {
+    margin: 0 30px;
+  }
+}
+
+@media (max-width: $max-mobile-width) {
   .addition__list {
     justify-content: center;
   }

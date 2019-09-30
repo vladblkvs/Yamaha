@@ -62,7 +62,13 @@
   opacity: 0.7;
 }
 
-@media (max-width: $tablet-width) {
+@media (max-width: $max-tablet-width) {
+  .page-header__search-btn {
+    margin-right: 25px;
+  }
+}
+
+@media (max-width: $max-mobile-width) {
   .page-header__logo,
   .page-header__search-btn {
     width: 100%;
