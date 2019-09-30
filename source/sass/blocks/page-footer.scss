@@ -65,8 +65,23 @@
   fill: #393d43;
 }
 
-@media (max-width: $tablet-width) {
+@media (max-width: $max-tablet-width) {
   .page-footer__flex-block {
-    padding: 0 30px;
+    max-width: 880px;
+    margin: 0 auto;
+  }
+
+  .page-footer__nav {
+    padding: 30px 0;
+  }
+}
+
+@media (max-width: $max-mobile-width) {
+  .page-footer__nav {
+    padding: 15px 0;
+  }
+
+  .page-footer__flex-block {
+    padding: 0 10px;
   }
 }

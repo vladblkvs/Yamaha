@@ -194,11 +194,24 @@
   margin-top: 30px;
 }
 
-@media (max-width: $tablet-width) {
+@media (max-width: $max-tablet-width) {
+  .product__info-block {
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0;
+  }
+
   .product__description {
     margin: 0 auto;
   }
 
+  .product__btn {
+    width: 90px;
+    min-height: 120px;
+  }
+}
+
+@media (max-width: $max-mobile-width) {
   .product__btn-block {
     justify-content: center;
     margin: 30px auto 0;
