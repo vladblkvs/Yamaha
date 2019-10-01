@@ -13,10 +13,6 @@
   cursor: pointer;
 }
 
-.button:not(:first-child) {
-  margin-left: 14px;
-}
-
 .button--download {
   color: #ee3b33;
   background-color: #ffffff;
@@ -30,4 +26,10 @@
 
 .button:active {
   opacity: 0.7;
+}
+
+@media (max-width: $max-mobile-width) {
+  .button {
+    width: 100%;
+  }
 }

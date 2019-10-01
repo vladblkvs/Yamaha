@@ -16,7 +16,7 @@
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 12px;
   font-weight: 400;
-  line-height: 2.25;
+  line-height: 27px;
   background-color: #212327;
 }
 
@@ -46,7 +46,7 @@
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 10px;
   font-weight: 400;
-  line-height: 2.7;
+  line-height: 27px;
   text-decoration: none;
   text-transform: uppercase;
   color: #787e89;
@@ -79,9 +79,38 @@
 @media (max-width: $max-mobile-width) {
   .page-footer__nav {
     padding: 15px 0;
+    font-size: 16px;
+  }
+
+  .page-footer__contact {
+    font-size: 16px;
   }
 
   .page-footer__flex-block {
-    padding: 0 10px;
+    padding: 0 24px;
+  }
+
+  .page-footer__list {
+    width: 100%;
+    max-width: 250px;
+    margin-right: 0;
+  }
+
+  .page-footer__flex-block--footer-down {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .page-footer__list--footer-down {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .page-footer__logo {
+    width: 100%;
+  }
+
+  .page-footer__text {
+    text-align: center;
   }
 }
