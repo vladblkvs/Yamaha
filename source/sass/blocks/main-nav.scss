@@ -4,6 +4,10 @@
   justify-content: space-between;
 }
 
+.main-nav--hidden {
+  display: none;
+}
+
 .main-nav__list {
   display: flex;
   flex-wrap: wrap;
@@ -85,6 +89,10 @@
   .main-nav {
     flex-direction: column;
     padding: 12px 0 15px;
+  }
+
+  .main-nav--hidden {
+    display: flex;
   }
 
   .main-nav__item {
