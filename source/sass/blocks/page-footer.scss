@@ -41,6 +41,17 @@
   }
 }
 
+.page-footer__link:hover,
+.page-footer__link:focus {
+  color: #ffffff;
+  text-decoration: underline;
+  outline: none;
+}
+
+.page-footer__link:active {
+  opacity: 0.7;
+}
+
 .page-footer__contact {
   padding: 15px 0;
   font-family: "Oswald", "Arial", sans-serif;
