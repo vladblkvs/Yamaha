@@ -232,21 +232,20 @@
     content: "";
     position: absolute;
     z-index: 2;
-    top: 25%;
+    top: 0;
     display: block;
-    width: 1px;
-    height: 50%;
+    width: 24px;
+    height: 100%;
   }
 
   .product__list-wrapper::after {
-    right: -2px;
-    box-shadow: 0 0 24px 18px rgba(255, 255, 255, 1);
+    right: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.01));
   }
 
   .product__list-wrapper::before {
-    content: "";
-    left: -2px;
-    box-shadow: 0 0 24px 18px rgba(255, 255, 255, 1);
+    left: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.01));
   }
 
   .product__item {
