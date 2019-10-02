@@ -74,6 +74,7 @@
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 13px;
   font-weight: 500;
+  text-transform: uppercase;
   color: #c8c8c8;
   text-align: center;
 }
@@ -90,4 +91,10 @@
 .specs__btn:focus .specs__svg {
   fill: #ee3b33;
   opacity: 1;
+}
+
+@media (max-width: $max-mobile-width) {
+  .specs__title--vanish {
+    display: none;
+  }
 }
