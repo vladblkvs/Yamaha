@@ -83,14 +83,16 @@
 .specs__item:hover .specs__title,
 .specs__btn:focus .specs__title {
   color: #ee3b33;
-  opacity: 1;
 }
 
 .specs__item--active .specs__svg,
 .specs__item:hover .specs__svg,
 .specs__btn:focus .specs__svg {
   fill: #ee3b33;
-  opacity: 1;
+}
+
+.specs__item:not(.specs__item--active):active .specs__btn-inner {
+  opacity: 0.7;
 }
 
 @media (max-width: $max-mobile-width) {
