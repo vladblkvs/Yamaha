@@ -29,9 +29,10 @@ var searchBtn = searchForm.querySelector('.search-form__btn:not(.search-form__bt
 var searchCloseBtn = searchForm.querySelector('.search-form__btn--close');
 var searchInputField = searchForm.querySelector('.search-form__field');
 var mainNav = document.querySelector('.main-nav');
+var MAX_MOBILE_WIDTH = 767;
 
 var onSearchBtnClick = function () {
-  if (searchForm.classList.contains('search-form--active') || window.matchMedia("(max-width: 767px)").matches) {
+  if (searchForm.classList.contains('search-form--active') || window.matchMedia("(max-width: " + MAX_MOBILE_WIDTH + "px)").matches) {
     searchForm.submit();
   } else {
     openSearchForm();
@@ -43,6 +44,7 @@ var openSearchForm = function () {
   mainNav.classList.add('main-nav--hidden');
   searchForm.classList.add('search-form--active');
   searchCloseBtn.addEventListener('click', closeSearchForm);
+  searchBtn.blur();
 };
 
 var closeSearchForm = function () {
