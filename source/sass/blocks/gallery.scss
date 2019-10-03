@@ -53,11 +53,11 @@
 
 .gallery__img {
   display: block;
+  width: 100%;
 }
 
 @media (max-width: $max-mobile-width) {
   .gallery__list {
-    max-width: 746px;
     margin: 0 auto;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 2fr 1fr;
