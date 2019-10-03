@@ -21,7 +21,16 @@
   fill: #ffffff;
 }
 
+.page-header__menu-btn,
+body[data-nojs] .page-header__menu-btn {
+  display: none;
+}
+
 @media (max-width: $max-mobile-width) {
+  .page-header__container {
+    position: relative;
+  }
+
   .page-header__logo {
     width: 100%;
     padding-left: 24px;
@@ -29,5 +38,50 @@
 
   .page-header__logo svg {
     margin: 0;
+  }
+
+  .page-header__menu-btn svg {
+    fill: #ffffff;
+  }
+
+  .page-header__menu-btn {
+    position: absolute;
+    top: 17px;
+    right: 17px;
+    display: block;
+    padding: 24px;
+    background: none;
+    border: none;
+    outline: none;
+  }
+
+  .page-header__menu-btn:hover,
+  .page-header__menu-btn:focus {
+    border-radius: 50%;
+    box-shadow: inset 0 0 0 3px #ffffff;
+  }
+
+  .page-header__menu-btn:active {
+    opacity: 0.7;
+  }
+
+  .page-header__open-menu {
+    display: block;
+    width: 18px;
+    height: 18px;
+
+    .page-header--expended & {
+      display: none;
+    }
+  }
+
+  .page-header__close-menu {
+    display: none;
+
+    .page-header--expended & {
+      display: block;
+      width: 18px;
+      height: 18px;
+    }
   }
 }
