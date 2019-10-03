@@ -55,3 +55,15 @@ var closeSearchForm = function () {
 searchInputField.addEventListener('focus', openSearchForm);
 
 searchBtn.addEventListener('click', onSearchBtnClick);
+
+// mobile-menu
+var pageHeader = document.querySelector('.page-header');
+var menuButton = pageHeader.querySelector('.page-header__menu-btn');
+
+var onMenuButtonClick = function () {
+  pageHeader.classList.toggle('page-header--expended');
+  closeSearchForm();
+  menuButton.blur();
+};
+
+menuButton.addEventListener('click', onMenuButtonClick);

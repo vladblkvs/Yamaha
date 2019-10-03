@@ -74,9 +74,15 @@
 @media (max-width: $max-mobile-width) {
   .search-form {
     position: relative;
+    display: none;
     width: 100%;
     padding-right: 0;
     border-top: 1px solid #dadfe6;
+
+    .page-header--expended &,
+    body[data-nojs] & {
+      display: flex;
+    }
   }
 
   .search-form__field-wrapper {

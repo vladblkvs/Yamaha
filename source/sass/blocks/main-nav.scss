@@ -87,8 +87,14 @@
 
 @media (max-width: $max-mobile-width) {
   .main-nav {
+    display: none;
     flex-direction: column;
     padding: 12px 0 15px;
+
+    .page-header--expended &,
+    body[data-nojs] & {
+      display: flex;
+    }
   }
 
   .main-nav--hidden {
