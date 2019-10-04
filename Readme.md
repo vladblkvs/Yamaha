@@ -1,12 +1,12 @@
-# Учебный проект «Yamaha»
+# «Yamaha» — адаптивный лендинг по продаже мотоциклов
 
 ### Разработка:
 * [Vladislav Beliakovskiy](https://github.com/vladblkvs/).
 * [Ilya Pridanov](https://github.com/ilyapridanov).
 
 ### Макет:
-* HTML Academy.
+* [HTML Academy](https://htmlacademy.ru).
 
 ---
 
-**Yamaha** — лендинг по продаже мотоциклов.
+Тренировочный проект.
