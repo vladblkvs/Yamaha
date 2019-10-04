@@ -49,12 +49,12 @@
   display: block;
   width: 100%;
   height: 3px;
-  background-color: #ee3b33;
+  background-color: $theme-color;
 }
 
 .main-nav__item:not(.main-nav__item--active) .main-nav__link:hover,
 .main-nav__link:focus {
-  color: #ee3b33;
+  color: $theme-color;
 }
 
 .main-nav__item:not(.main-nav__item--active) .main-nav__link:active {
@@ -75,7 +75,7 @@
   }
 
   .main-nav__item--active .main-nav__link {
-    color: #ee3b33;
+    color: $theme-color;
   }
 
   .main-nav__item--active .main-nav__link::after,
