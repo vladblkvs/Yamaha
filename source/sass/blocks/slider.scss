@@ -44,7 +44,7 @@
 .slider__menu-item--active .slider__btn,
 .slider__menu-item:hover .slider__btn,
 .slider__btn:focus {
-  background-color: #ee3b33;
+  background-color: $theme-color;
 }
 
 .slider__btn-inner {
@@ -103,13 +103,13 @@
 .slider__menu-item--active .slider__menu-title,
 .slider__menu-item:hover .slider__menu-title,
 .slider__btn:focus .slider__menu-title {
-  color: #ee3b33;
+  color: $theme-color;
 }
 
 .slider__menu-item--active .slider__svg,
 .slider__menu-item:hover .slider__svg,
 .slider__btn:focus .slider__svg {
-  fill: #ee3b33;
+  fill: $theme-color;
 }
 
 .slider__menu-item:not(.slider__menu-item--active):active .slider__btn-inner {

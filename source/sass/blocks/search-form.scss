@@ -28,7 +28,7 @@
 }
 
 .search-form__field:focus::placeholder {
-  color: #ee3b33;
+  color: $theme-color;
   opacity: 1;
 }
 
@@ -68,7 +68,7 @@
 
 .search-form__btn:hover svg,
 .search-form__btn:focus svg {
-  fill: #ee3b33;
+  fill: $theme-color;
 }
 
 @media (max-width: $max-mobile-width) {

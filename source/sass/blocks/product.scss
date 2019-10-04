@@ -38,7 +38,7 @@
 
 .product__item:not(.product__item--active) .product__btn:hover,
 .product__btn:focus {
-  color: #ee3b33;
+  color: $theme-color;
 }
 
 .product__item:not(.product__item--active) .product__btn:active {
@@ -55,7 +55,7 @@
   display: block;
   width: 100%;
   height: 3px;
-  background-color: #ee3b33;
+  background-color: $theme-color;
 }
 
 .product__preview {
@@ -114,7 +114,7 @@
 .product__version-btn:hover,
 .product__version-btn:focus,
 .product__version-item--active .product__version-btn {
-  color: #ee3b33;
+  color: $theme-color;
 }
 
 .product__version-item:not(.product__version-item--active) .product__version-btn:active {

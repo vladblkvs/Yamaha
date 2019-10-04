@@ -7,20 +7,20 @@
   font-weight: 500;
   text-transform: uppercase;
   color: #ffffff;
-  background-color: #ee3b33;
-  border: 3px solid #ee3b33;
+  background-color: $theme-color;
+  border: 3px solid $theme-color;
   border-radius: 4px;
   cursor: pointer;
 }
 
 .button--download {
-  color: #ee3b33;
+  color: $theme-color;
   background-color: #ffffff;
 }
 
 .button:hover,
 .button:focus {
-  box-shadow: 0 0 0 2px #ffffff, 0 0 0 4px #ee3b33;
+  box-shadow: 0 0 0 2px #ffffff, 0 0 0 4px $theme-color;
   outline: none;
 }
 
