@@ -83,3 +83,10 @@
     grid-row: 3 / 4;
   }
 }
+
+@media (min-width: $big-screen-width) {
+  .gallery__list {
+    border-radius: 12px;
+    overflow: hidden;
+  }
+}
