@@ -3,15 +3,15 @@
 document.querySelector('body').removeAttribute('data-nojs');
 
 // slider
-var toggleSlide = function () {
-  var slides = document.querySelectorAll('.slider__item');
-  var sliderMenuItem = document.querySelectorAll('.slider__menu-item');
-  var sliderToggles = document.querySelectorAll('.slider__btn');
+const toggleSlide = function () {
+  let slides = document.querySelectorAll('.slider__item');
+  let sliderMenuItem = document.querySelectorAll('.slider__menu-item');
+  let sliderToggles = document.querySelectorAll('.slider__btn');
 
   sliderToggles.forEach(function (toggle, i) {
     toggle.addEventListener('click', function (evt) {
       evt.preventDefault();
-      for (var j = 0; j < sliderMenuItem.length; j++) {
+      for (let j = 0; j < sliderMenuItem.length; j++) {
         sliderMenuItem[j].classList.remove('slider__menu-item--active');
         slides[j].classList.remove('slider__item--active');
       }
@@ -24,14 +24,14 @@ var toggleSlide = function () {
 toggleSlide();
 
 // search form
-var searchForm = document.querySelector('.search-form');
-var searchBtn = searchForm.querySelector('.search-form__btn:not(.search-form__btn--close)');
-var searchCloseBtn = searchForm.querySelector('.search-form__btn--close');
-var searchInputField = searchForm.querySelector('.search-form__field');
-var mainNav = document.querySelector('.main-nav');
-var MAX_MOBILE_WIDTH = 767;
+let searchForm = document.querySelector('.search-form');
+let searchBtn = searchForm.querySelector('.search-form__btn:not(.search-form__btn--close)');
+let searchCloseBtn = searchForm.querySelector('.search-form__btn--close');
+let searchInputField = searchForm.querySelector('.search-form__field');
+let mainNav = document.querySelector('.main-nav');
+const MAX_MOBILE_WIDTH = 767;
 
-var onSearchBtnClick = function () {
+const onSearchBtnClick = function () {
   if (searchForm.classList.contains('search-form--active') || window.matchMedia("(max-width: " + MAX_MOBILE_WIDTH + "px)").matches) {
     searchForm.submit();
   } else {
@@ -40,14 +40,14 @@ var onSearchBtnClick = function () {
   };
 };
 
-var openSearchForm = function () {
+const openSearchForm = function () {
   mainNav.classList.add('main-nav--hidden');
   searchForm.classList.add('search-form--active');
   searchCloseBtn.addEventListener('click', closeSearchForm);
   searchBtn.blur();
 };
 
-var closeSearchForm = function () {
+const closeSearchForm = function () {
   mainNav.classList.remove('main-nav--hidden');
   searchForm.classList.remove('search-form--active');
   searchCloseBtn.removeEventListener('click', closeSearchForm);
@@ -59,10 +59,10 @@ searchInputField.addEventListener('focus', openSearchForm);
 searchBtn.addEventListener('click', onSearchBtnClick);
 
 // mobile-menu
-var pageHeader = document.querySelector('.page-header');
-var menuButton = pageHeader.querySelector('.page-header__menu-btn');
+let pageHeader = document.querySelector('.page-header');
+let menuButton = pageHeader.querySelector('.page-header__menu-btn');
 
-var onMenuButtonClick = function () {
+const onMenuButtonClick = function () {
   pageHeader.classList.toggle('page-header--expended');
   closeSearchForm();
   menuButton.blur();
