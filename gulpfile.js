@@ -23,7 +23,7 @@ gulp.task("css", function() {
     .pipe(sourcemap.init())
     .pipe(scss())
     .pipe(postcss([
-      autoprefixer()
+      autoprefixer({grid:true})
     ]))
     .pipe(gulp.dest("build/css"))
     .pipe(cssnano())
