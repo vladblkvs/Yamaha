@@ -57,7 +57,7 @@
         </ul>
       </nav>
       <form class="page-header__search-form search-form" action="#" method="GET">
-        <label class="search-form__field-wrapper">
+        <div class="search-form__field-wrapper">
           <input class="search-form__field" type="text" placeholder="Search">
           <button class="search-form__btn search-form__btn--close" type="button">
             <span class="search-form__btn-inner">
@@ -67,7 +67,7 @@
               </svg>
             </span>
           </button>
-        </label>
+        </div>
         <button class="search-form__btn" type="button">
           <span class="visually-hidden">Open search form</span>
           <span class="search-form__btn-inner">
@@ -132,7 +132,7 @@
           <div class="product__info-block container">
             <div class="product__image">
               <details class="product__note product__note--top">
-                <summary class="product__note-btn" role="button">
+                <summary class="product__note-btn">
                   <span class="product__note-open visually-hidden">Показать заметку</span>
                   <span class="product__note-close visually-hidden">Скрыть заметку</span>
                   <svg width="8" height="8" aria-hidden="true">
@@ -142,7 +142,7 @@
                 <p class="product__note-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. In, corrupti tenetur quia eveniet beatae obcaecati!</p>
               </details>
               <details class="product__note product__note--left">
-                <summary class="product__note-btn" role="button">
+                <summary class="product__note-btn">
                   <span class="product__note-open visually-hidden">Показать заметку</span>
                   <span class="product__note-close visually-hidden">Скрыть заметку</span>
                   <svg width="8" height="8" aria-hidden="true">
@@ -152,7 +152,7 @@
                 <p class="product__note-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. In, corrupti tenetur quia eveniet beatae obcaecati!</p>
               </details>
               <details class="product__note product__note--right">
-                <summary class="product__note-btn" role="button">
+                <summary class="product__note-btn">
                   <span class="product__note-open visually-hidden">Показать заметку</span>
                   <span class="product__note-close visually-hidden">Скрыть заметку</span>
                   <svg width="8" height="8" aria-hidden="true">
@@ -275,7 +275,7 @@
           <ul class="slider__list">
             <li class="slider__item specs-slide">
               <div class="slider__image-block">
-                <img src="img/motor.jpg" width="291" height="313">
+                <img src="img/motor.jpg" width="291" height="313" alt="Motor">
               </div>
               <div class="slider__description">
                 <h3 class="slider__title">Lorem ipsum dolor 1</h3>
@@ -296,7 +296,7 @@
             </li>
             <li class="slider__item specs-slide slider__item--active">
               <div class="slider__image-block">
-                <img src="img/motor.jpg" width="291" height="313">
+                <img src="img/motor.jpg" width="291" height="313" alt="Motor">
               </div>
               <div class="slider__description">
                 <h3 class="slider__title">Cutting-edge Crossplane Engine</h3>
@@ -317,7 +317,7 @@
             </li>
             <li class="slider__item specs-slide">
               <div class="slider__image-block">
-                <img src="img/motor.jpg" width="291" height="313">
+                <img src="img/motor.jpg" width="291" height="313" alt="Motor">
               </div>
               <div class="slider__description">
                 <h3 class="slider__title">Lorem ipsum dolor 3</h3>
@@ -338,7 +338,7 @@
             </li>
             <li class="slider__item specs-slide">
               <div class="slider__image-block">
-                <img src="img/motor.jpg" width="291" height="313">
+                <img src="img/motor.jpg" width="291" height="313" alt="Motor">
               </div>
               <div class="slider__description">
                 <h3 class="slider__title">Lorem ipsum dolor 4</h3>
@@ -359,7 +359,7 @@
             </li>
             <li class="slider__item specs-slide">
               <div class="slider__image-block">
-                <img src="img/motor.jpg" width="291" height="313">
+                <img src="img/motor.jpg" width="291" height="313" alt="Motor">
               </div>
               <div class="slider__description">
                 <h3 class="slider__title">Lorem ipsum dolor 5</h3>
@@ -382,6 +382,7 @@
         </div>
       </section>
       <section class="gallery">
+        <h2 class="visually-hidden">Gallery</h2>
         <div class="container">
           <ul class="gallery__list">
             <li class="gallery__item">
@@ -403,6 +404,7 @@
         </div>
       </section>
       <section class="addition">
+        <h2 class="visually-hidden">Additions and related products</h2>
         <div class="container">
           <p class="addition__picture">
             <img src="img/additional-picture.jpg" width="840" height="559" alt="Yamaha motorcycle">
@@ -417,7 +419,7 @@
             <li class="addition__products-item">
               <a href="#" class="addition__products-link">
                 <span class="addition__product-image">
-                  <img src="img/product-gloves.jpg">
+                   <img src="img/product-gloves.jpg" alt="Gloves">
                 </span>
                 <span class="addition__product-title">Gloves</span>
                 <span class="addition__product-price">$24.99</span>
@@ -426,7 +428,7 @@
             <li class="addition__products-item">
               <a href="#" class="addition__products-link">
                 <span class="addition__product-image">
-                  <img src="img/product-jacket.jpg">
+                  <img src="img/product-jacket.jpg" alt="Jacket">
                 </span>
                 <span class="addition__product-title">Jacket</span>
                 <span class="addition__product-price">$199.99</span>
@@ -435,7 +437,7 @@
             <li class="addition__products-item">
               <a href="#" class="addition__products-link">
                 <span class="addition__product-image">
-                  <img src="img/product-helmet.jpg">
+                  <img src="img/product-helmet.jpg" alt="Helmet">
                 </span>
                 <span class="addition__product-title">Helmet</span>
                 <span class="addition__product-price">$159.99</span>
